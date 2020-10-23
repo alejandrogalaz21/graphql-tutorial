@@ -1,0 +1,35 @@
+{
+  "name": "graphql-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist --source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandrogalaz21/graphql-tutorial.git"
+  },
+  "keywords": [],
+  "author": "alejandro galaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandrogalaz21/graphql-tutorial/issues"
+  },
+  "homepage": "https://github.com/alejandrogalaz21/graphql-tutorial#readme",
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "apollo-server": "^2.18.2",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.10.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
